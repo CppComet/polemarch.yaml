@@ -32,6 +32,6 @@ view:
       format: invalid_or_unknown
       help: "Some help text"
     playbooks:
-     "main.yml":
+     main.yml:
       title: "Execute title"
       help: "Some help text"
