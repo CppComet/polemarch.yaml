@@ -1,0 +1,24 @@
+- hosts: all
+  tasks:
+    - ping:
+
+    - debug:
+        msg: "System {{ inventory_hostname }} has uuid {{ ansible_product_uuid }}"
+
+    - debug:
+        msg: "Extra vars teststring {{ teststring }}"
+
+    - debug:
+        msg: "Extra vars testinteger {{ testinteger }}"
+
+    - debug:
+        msg: "Extra vars testfloat {{ testfloat }}"
+
+    - debug:
+        msg: "Extra vars testboolean {{ testboolean }}"
+
+    - debug:
+        msg: "Extra vars testenum_string {{ testenum_string }}"
+
+    - debug:
+        msg: "Extra vars testunknown {{ testunknown }}"

@@ -1,0 +1,44 @@
+view:
+    fields:
+     teststring:
+      title: "title teststring"
+      default: 0
+      format: string
+      help: "help teststring"
+     testinteger:
+      title: "title testinteger"
+      default: 0
+      format: integer
+      help: "help testinteger"
+     testfloat:
+      title: "title testfloat"
+      default: 0
+      format: float
+      help: "help testfloat"
+     testboolean:
+      title: "title testboolean"
+      default: 0
+      format: boolean
+      help: "help testboolean"
+     testenum_string:
+      title: "title testenum_string"
+      default: "C"
+      format: string
+      help: "help testenum_string"
+      enum:
+       - A
+       - B
+       - C
+       - D
+     testunknown:
+      title: "title testunknown"
+      default: 0
+      format: invalid_or_unknown_test
+      help: "help testunknown"
+    playbooks:
+     "main.yml":
+      title: "Execute main.yml"
+      help: "help main.yml"
+     "uptime.yml":
+      title: "Execute uptime.yml"
+      help: "help uptime.yml"
